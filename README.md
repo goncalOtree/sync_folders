@@ -29,7 +29,7 @@ The program accepts the following command-line arguments:
 To run the program, use the following command:
 
 ```bash
-python sync.py <source_folder> <replica_folder> <log_file> [--i INTERVAL]
+python main.py <source_folder> <replica_folder> <log_file> [--i INTERVAL]
 ```
 
 ### Example Command
