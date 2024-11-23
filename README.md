@@ -42,7 +42,7 @@ This will sync the source and replica folders every 90 seconds and log the activ
 
 ## Logging
 
-The program logs synchronization activities, such as updated files, skipped files, and any encountered errors (e.g., `PermissionError`, `FileNotFoundError`). The log file is specified by the user in the command line and is created if it does not already exist.
+The program logs synchronization activities, such as updated/removed/created files and skipped files with corresponding error (e.g., `PermissionError`, `FileNotFoundError`). The log file is specified by the user in the command line and is created if it does not already exist.
 
 Example log entry:
 
