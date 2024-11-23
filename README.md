@@ -1,7 +1,3 @@
-Certainly! Below is an example of a `README.md` for your sync program. This README includes sections on setting up, using, and testing the program.
-
----
-
 # Sync Program
 
 A simple folder synchronization utility that keeps two folders in sync by copying files from the source folder to the replica folder at specified intervals. If the replica folder files differ from the source folder, the program will update them. The program logs the process and errors in a log file.
