@@ -101,10 +101,9 @@ def test_sync_nonexistent_source(setup_test_environment):
     Test behavior when the source folder does not exist.
     """
 
-    _,_,logger = setup_test_environment
+    _,replica,logger = setup_test_environment
 
     source = Path("/nonexistent/source")
-    replica = Path("/tmp/replica")
 
     with pytest.raises(FileNotFoundError):
         sync(source, replica, logger)
