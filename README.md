@@ -2,12 +2,6 @@
 
 A simple folder synchronization utility that keeps two folders in sync by copying files from the source folder to the replica folder at specified intervals. If the replica folder files differ from the source folder, the program will update them. The program logs the process and errors in a log file.
 
-## Features
-- Synchronizes files between two folders at regular intervals.
-- Logs synchronization activities and errors.
-- Handles errors gracefully (e.g., permission issues or file not found).
-- Runs continuously, making it suitable for ongoing sync tasks.
-
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
