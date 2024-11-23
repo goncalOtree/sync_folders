@@ -13,7 +13,7 @@ A simple folder synchronization utility that that synchronizes two folders: sour
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/goncalOtree/sync_folders.git]
+   git clone https://github.com/goncalOtree/sync_folders.git
    cd sync_folders
    ```
 
