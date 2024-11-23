@@ -35,7 +35,7 @@ python main.py <source_folder> <replica_folder> <log_file> [--i INTERVAL]
 ### Example Command
 
 ```bash
-python sync.py /Users/username/source /Users/username/replica /Users/username/sync_log.log --i 90
+python main.py /Users/username/source /Users/username/replica /Users/username/sync_log.log --i 90
 ```
 
 This will sync the source and replica folders every 90 seconds and log the activity to `sync_log.log`.
