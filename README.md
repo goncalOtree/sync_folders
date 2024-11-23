@@ -1,4 +1,4 @@
-# Sync Program
+# Sync_Folders
 
 A simple folder synchronization utility that that synchronizes two folders: source and replica. The program maintains a full, identical copy of source folder at replica folder. The program logs the process and errors in a log file.
 
