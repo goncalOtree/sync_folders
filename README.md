@@ -1,6 +1,6 @@
 # Sync Program
 
-A simple folder synchronization utility that keeps two folders in sync by copying files from the source folder to the replica folder at specified intervals. If the replica folder files differ from the source folder, the program will update them. The program logs the process and errors in a log file.
+A simple folder synchronization utility that that synchronizes two folders: source and replica. The program maintain a full, identical copy of source folder at replica folder. The program logs the process and errors in a log file.
 
 ## Table of Contents
 - [Installation](#installation)
