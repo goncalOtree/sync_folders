@@ -14,8 +14,8 @@ A simple folder synchronization utility that keeps two folders in sync by copyin
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/sync-program.git
-   cd sync-program
+   git clone [https://github.com/goncalOtree/sync_folders.git]
+   cd sync_folders
    ```
 
 2. Install the required dependencies:
@@ -93,30 +93,6 @@ You can run tests using `pytest`:
 2. Run the tests:
 
    ```bash
-   pytest
+   pytest sync_test.py
    ```
 
-### Test Fixtures
-
-The tests include a fixture `setup_test_environment`, which sets up temporary folders for testing. It creates:
-
-- `source_folder`: A folder containing test files.
-- `replica_folder`: A replica folder to sync files to.
-- `logs.log`: A log file where synchronization events are logged.
-
-The tests ensure that the program handles various scenarios, including permission errors and missing files.
-
-### Example Test
-
-```python
-def test_sync_log_creation(setup_test_environment):
-    source, replica, logger, logs = setup_test_environment
-
-    # Log a test message
-    logger.info("Test log entry")
-
-    # Verify that the log file exists and contains the log message
-    assert logs.exists()
-    with open(logs) as log_file:
-        assert "Test log entry" in log_file.read()
-```
