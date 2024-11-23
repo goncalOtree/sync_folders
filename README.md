@@ -5,7 +5,6 @@ A simple folder synchronization utility that keeps two folders in sync by copyin
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Arguments](#arguments)
 - [Logging](#logging)
 - [Testing](#testing)
 
@@ -18,39 +17,7 @@ A simple folder synchronization utility that keeps two folders in sync by copyin
    cd sync_folders
    ```
 
-2. Install the required dependencies:
-
-   If you're using `pip`:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   Alternatively, if you’re using a `venv`:
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   pip install -r requirements.txt
-   ```
-
 ## Usage
-
-To run the program, use the following command:
-
-```bash
-python sync.py <source_folder> <replica_folder> <log_file> [--i INTERVAL]
-```
-
-### Example
-
-```bash
-python sync.py /path/to/source_folder /path/to/replica_folder /path/to/log_file.log --i 5
-```
-
-This will synchronize the contents of `source_folder` with `replica_folder` every 5 minutes and log the results to `log_file.log`.
-
-## Arguments
 
 The program accepts the following command-line arguments:
 
@@ -58,6 +25,12 @@ The program accepts the following command-line arguments:
 - `<replica_folder>`: The path to the replica folder.
 - `<log_file>`: The path to the log file.
 - `--i INTERVAL`: The time interval (in minutes) between synchronizations. Defaults to `5` if not provided.
+
+To run the program, use the following command:
+
+```bash
+python sync.py <source_folder> <replica_folder> <log_file> [--i INTERVAL]
+```
 
 ### Example Command
 
