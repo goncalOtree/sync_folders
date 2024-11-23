@@ -24,7 +24,7 @@ The program accepts the following command-line arguments:
 - `<source_folder>`: The path to the source folder.
 - `<replica_folder>`: The path to the replica folder.
 - `<log_file>`: The path to the log file.
-- `--i INTERVAL`: The time interval (in minutes) between synchronizations. Defaults to `5` if not provided.
+- `--i INTERVAL`: The time interval (in seconds) between synchronizations. Defaults to `60` if not provided.
 
 To run the program, use the following command:
 
@@ -35,10 +35,10 @@ python sync.py <source_folder> <replica_folder> <log_file> [--i INTERVAL]
 ### Example Command
 
 ```bash
-python sync.py /Users/username/source /Users/username/replica /Users/username/sync_log.log --i 10
+python sync.py /Users/username/source /Users/username/replica /Users/username/sync_log.log --i 90
 ```
 
-This will sync the source and replica folders every 10 minutes and log the activity to `sync_log.log`.
+This will sync the source and replica folders every 90 seconds and log the activity to `sync_log.log`.
 
 ## Logging
 
@@ -66,6 +66,6 @@ You can run tests using `pytest`:
 2. Run the tests:
 
    ```bash
-   pytest sync_test.py
+   pytest test_sync.py
    ```
 
