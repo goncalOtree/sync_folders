@@ -8,8 +8,6 @@ A simple folder synchronization utility that keeps two folders in sync by copyin
 - [Arguments](#arguments)
 - [Logging](#logging)
 - [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
